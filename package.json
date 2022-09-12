@@ -1,0 +1,44 @@
+{
+  "name": "@hexlet/code",
+  "version": "2.0.0",
+  "type": "module",
+  "description": "[![Actions Status](https://github.com/Paranoidream/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/Paranoidream/frontend-project-46/actions)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paranoidream/frontend-project-46.git"
+  },
+  "author": "Alex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Paranoidream/frontend-project-46/issues"
+  },
+  "homepage": "https://github.com/Paranoidream/frontend-project-46#readme",
+  "files": [
+    "dist"
+  ],
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublishOnly": "npm run build"
+  },
+  "bin": {
+    "gendiff": "bin/gendiff.js"
+  },
+  "dependencies": {
+    "commander": "^8.3.0",
+    "js-yaml": "^3.14.1",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@jest/globals": "^27.0.6",
+    "eslint": "^7.30.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "jest": "^27.0.6",
+    "jest-circus": "^27.0.6",
+    "jest-cli": "^27.0.6"
+  }
+}
